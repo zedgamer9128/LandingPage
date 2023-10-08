@@ -4,66 +4,125 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  background-color: #1f2937;
-}
-#main #header {
+#header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 16px;
+  flex-wrap: wrap;
+  gap: 30px;
+  background-color: #1f2937;
+  padding: 20px 50px;
 }
-#main #header div {
-  font-size: 24px;
+#header div {
   color: #f9faf8;
+  width: 440px;
 }
-#main #header ul {
-  list-style-type: none;
+#header #logo {
+  font-size: 24px;
+  font-weight: bolder;
+}
+#header ul {
+  list-style: none;
   display: flex;
   gap: 10px;
 }
-#main #header ul li > a {
-  font-size: 18px;
-  color: #e5e7eb;
+#header ul a {
   text-decoration: none;
+  color: #e5e7eb;
+  font-size: 18px;
 }
-#main #content {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 100px;
-}
-#main #content #leftmain {
-  width: 420px;
-  gap: 12px;
+#header #left {
   display: flex;
   flex-direction: column;
-  align-content: flex-start;
-  justify-content: center;
+  gap: 10px;
+  padding: 23.1vh 0px;
 }
-#main #content #leftmain #maintext {
-  color: #f9faf8;
+#header #left #maintext {
   font-size: 48px;
   font-weight: bolder;
+  color: #f9faf8;
 }
-#main #content #leftmain .sectext {
+#header #left #mainsubtext {
   color: #e5e7eb;
   font-size: 18px;
 }
-#main #content #leftmain #btn {
+#header #left #btn {
   background-color: #3882f6;
-  color: #f9faf8;
   border-radius: 10px;
-  padding: 8px 20px;
+  max-width: 100px;
+  font-weight: bold;
+  padding: 10px 5px;
+  text-align: center;
   align-self: flex-start;
 }
-#main #content #rightmain div {
-  padding: 100px;
+#header #img {
+  background-color: #6d747d;
+  padding: 100px 0px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#info {
+  padding: 50px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 100px;
+}
+#info #randinfo {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1f2937;
+}
+#info #boxcol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+#info #boxcol .boxgroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 185px;
+  gap: 10px;
+  text-align: center;
+  color: #4b5563;
+}
+#info #boxcol .boxgroup .box {
+  width: 150px;
+  height: 150px;
+  border: #3882f6 5px solid;
+  border-radius: 10px;
+}
+
+#quotediv {
+  padding: 100px 50px;
   background-color: #e5e7eb;
+}
+#quotediv #anotherdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  margin: auto;
+}
+#quotediv #anotherdiv #quote {
+  font-size: 36px;
+  font-weight: lighter;
+  font-style: italic;
+  color: #2b3442;
+}
+#quotediv #anotherdiv #cite {
+  font-weight: bolder;
+  color: #1f2937;
+  font-size: 20px;
+  align-self: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */
